@@ -15,3 +15,7 @@ carMakers.push(100); // Argument of type '100' is not assignable to parameter of
 carMakers.map((car: string): string => {
   return car.toLocaleUpperCase();
 });
+
+// Flexible types
+
+const importantDates: (Date | string | number)[] = [new Date(), '', 45];
